@@ -34,7 +34,7 @@ SFNet
   |       |       |---- datasets
   |       |       |        |---- cityscapes.py
   |       |       |---- models
-  |       |       |        |---- sfnet_r50-d8.py
+  |       |       |        |---- sfnet_r18-d8.py
   |       |       |---- schedules
   |       |       |        |---- schedule_50k.py
   |       |       |---- default_runtime.py
