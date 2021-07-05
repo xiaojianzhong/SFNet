@@ -1,19 +1,19 @@
 # Semantic Flow for Fast and Accurate Scene Parsing
 
-SFNet implementation based on [mmsegmentation](https://github.com/open-mmlab/mmsegmentation).
+基于 [mmsegmentation](https://github.com/open-mmlab/mmsegmentation) 的 SFNet 复现。
 
-The original paper: [Semantic Flow for Fast and Accurate Scene Parsing](https://arxiv.org/abs/2002.10120)
+原始论文：[Semantic Flow for Fast and Accurate Scene Parsing](https://arxiv.org/abs/2002.10120)
 
-Read this in other languages: English | [简体中文](./README_zh-CN.md)
+阅读其他语言的版本：[English](./README_en-US.md) | 简体中文
 
-## Table of Contents
+## 目录
 
-- [Prerequisites](#prerequisites)
-- [File Structure](#file-structure)
-- [Usage](#usage)
-- [Results](#results)
+- [环境要求](#prerequisites)
+- [目录结构](#file-structure)
+- [用法](#usage)
+- [结果](#results)
 
-## <a name="prerequisites"></a> Prerequisites
+## <a name="prerequisites"></a> 环境要求
 
 - [mim](https://github.com/open-mmlab/mim) >= v0.1.0
 - [mmcv-full](https://github.com/open-mmlab/mmcv) >= v1.3.8
@@ -25,7 +25,7 @@ $ pip install mmcv-full
 $ mim install mmsegmentation
 ```
 
-## <a name="file-structure"></a> File Structure
+## <a name="file-structure"></a> 目录结构
 
 ```
 SFNet
@@ -43,7 +43,7 @@ SFNet
   |---- sf_neck.py
 ```
 
-## <a name="usage"></a> Usage
+## <a name="usage"></a> 用法
 
 ```shell
 PYTHONPATH='.':$PYTHONPATH mim train mmseg configs/sfnet/sfnet_r18-d8_512x1024_50k_cityscapes.py \
@@ -51,4 +51,5 @@ PYTHONPATH='.':$PYTHONPATH mim train mmseg configs/sfnet/sfnet_r18-d8_512x1024_5
     --gpus 1
 ```
 
-## <a name="results"></a> Results
+## <a name="results"></a> 结果
+
