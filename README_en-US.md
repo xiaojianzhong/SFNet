@@ -46,7 +46,7 @@ SFNet
 ## <a name="usage"></a> Usage
 
 ```shell
-PYTHONPATH='.':$PYTHONPATH mim train mmseg configs/sfnet/sfnet_r18-d8_512x1024_50k_cityscapes.py \
+$ PYTHONPATH='.':$PYTHONPATH mim train mmseg configs/sfnet/sfnet_r18-d8_512x1024_50k_cityscapes.py \
     --work-dir ./work_dirs/sfnet_r18-d8_512x1024_50k_cityscapes/ \
     --gpus 1
 ```
