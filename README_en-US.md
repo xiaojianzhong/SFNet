@@ -15,9 +15,9 @@ Read this in other languages: English | [简体中文](./README.md)
 
 ## <a name="prerequisites"></a> Prerequisites
 
-- [mim](https://github.com/open-mmlab/mim) >= v0.1.0
-- [mmcv-full](https://github.com/open-mmlab/mmcv) >= v1.3.8
-- [mmsegmentation](https://github.com/open-mmlab/mmsegmentation) >= v0.15.0
+- [mim](https://github.com/open-mmlab/mim) == v0.1.0
+- [mmcv-full](https://github.com/open-mmlab/mmcv) == v1.3.8
+- [mmsegmentation](https://github.com/open-mmlab/mmsegmentation) == v0.15.0
 
 ```shell
 $ pip install openmim
