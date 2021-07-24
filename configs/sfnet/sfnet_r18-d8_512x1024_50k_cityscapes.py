@@ -3,4 +3,7 @@ _base_ = [
     '../_base_/default_runtime.py', '../_base_/schedules/schedule_50k.py'
 ]
 
-fp16 = dict(loss_scale='dynamic')
+# fp16 settings
+optimizer_config = dict(type='Fp16OptimizerHook', loss_scale=512.)
+# fp16 placeholder
+fp16 = dict()
