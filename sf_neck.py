@@ -5,6 +5,7 @@ import torch.nn.functional as F
 from mmcv.cnn import (build_conv_layer, ConvModule)
 from mmseg.models.builder import NECKS
 from mmseg.models.decode_heads.psp_head import PPM
+from mmcv.runner import auto_fp16
 
 
 class FAM(nn.Module):
@@ -144,6 +145,7 @@ class SFNeck(nn.Module):
         self.conv_cfg = conv_cfg
         self.norm_cfg = norm_cfg
         self.act_cfg = act_cfg
+        self.fp16_enabled = False
 
         self.ppm = PPM(
             self.pool_scales,
@@ -183,6 +185,7 @@ class SFNeck(nn.Module):
         self.fams = nn.ModuleList(self.fams)
         self.convs = nn.ModuleList(self.convs)
 
+    @auto_fp16()
     def forward(self, inputs):
         """Forward function."""
         psp_outs = [inputs[-1]]
