@@ -4,7 +4,7 @@ _base_ = [
 ]
 
 lr_config = dict(policy='poly', power=1.0, min_lr=1e-4, by_epoch=True)
-runner = dict(type='EpochBasedRunner', max_iters=300)
+runner = dict(type='EpochBasedRunner', max_epochs=300)
 checkpoint_config = dict(by_epoch=True, interval=30)
 evaluation = dict(interval=30, metric='mIoU')
 
