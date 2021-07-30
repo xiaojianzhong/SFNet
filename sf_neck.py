@@ -48,7 +48,8 @@ class FAM(nn.Module):
             1,
             conv_cfg=self.conv_cfg,
             norm_cfg=self.norm_cfg,
-            act_cfg=self.act_cfg)
+            act_cfg=self.act_cfg,
+            inplace=False)
         self.low_down_conv = build_conv_layer(
             self.conv_cfg,
             self.high_in_channels,
@@ -79,7 +80,7 @@ class FAM(nn.Module):
             low_x.shape[2:],
             mode='bilinear',
             align_corners=self.align_corners)
-        output = torch.cat([low_feat, high_feat], dim=1)
+        output = torch.cat([high_feat, low_feat], dim=1)
         flow = self.flow_conv(output)
         high_feat = FAM.warp(high_x, flow)
         output = low_x + high_feat
@@ -153,13 +154,12 @@ class SFNeck(nn.Module):
             self.channels,
             conv_cfg=self.conv_cfg,
             norm_cfg=self.norm_cfg,
-            act_cfg=self.act_cfg,
+            act_cfg=None,
             align_corners=self.align_corners)
         self.bottleneck = ConvModule(
             self.in_channels[-1] + len(self.pool_scales) * self.channels,
             self.channels,
-            3,
-            padding=1,
+            1,
             conv_cfg=self.conv_cfg,
             norm_cfg=self.norm_cfg,
             act_cfg=self.act_cfg)
@@ -177,7 +177,7 @@ class SFNeck(nn.Module):
             self.convs.append(ConvModule(
                 self.channels,
                 self.channels,
-                1,
+                3,
                 padding=1,
                 conv_cfg=self.conv_cfg,
                 norm_cfg=self.norm_cfg,
