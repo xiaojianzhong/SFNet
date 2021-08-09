@@ -4,7 +4,8 @@ custom_imports = dict(imports=['sf_neck'], allow_failed_imports=False)
 norm_cfg = dict(type='SyncBN', requires_grad=True)
 sampler = dict(
     type='OHEMPixelSampler',
-    thresh=0.7)
+    thresh=0.7,
+    min_kept=10000)
 model = dict(
     type='EncoderDecoder',
     pretrained='open-mmlab://resnet18_v1c',
