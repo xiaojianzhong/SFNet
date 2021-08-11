@@ -14,6 +14,7 @@ Read this in other languages: English | [简体中文](./README.md)
     - [Train](#train)
     - [Test](#test)
 - [Results](#results)
+- [Citation](#citation)
 
 ## <a name="prerequisites"></a> Prerequisites
 
@@ -75,3 +76,20 @@ $ zip -r results.zip results/
 and finally upload the .zip file onto [the submission entry for the Cityscapes dataset](https://www.cityscapes-dataset.com/submit/).
 
 ## <a name="results"></a> Results
+
+## <a name="citation"></a> Citation
+
+```
+@misc{mmcv,
+    title={{MMCV: OpenMMLab} Computer Vision Foundation},
+    author={MMCV Contributors},
+    howpublished = {\url{https://github.com/open-mmlab/mmcv}},
+    year={2018}
+}
+@misc{mmseg2020,
+    title={{MMSegmentation}: OpenMMLab Semantic Segmentation Toolbox and Benchmark},
+    author={MMSegmentation Contributors},
+    howpublished = {\url{https://github.com/open-mmlab/mmsegmentation}},
+    year={2020}
+}
+```

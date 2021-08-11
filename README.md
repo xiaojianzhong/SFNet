@@ -14,6 +14,7 @@
     - [训练](#train)
     - [测试](#test)
 - [结果](#results)
+- [引用](#citation)
 
 ## <a name="prerequisites"></a> 环境要求
 
@@ -75,4 +76,21 @@ $ zip -r results.zip results/
 最后手动将该压缩包上传到 [Cityscapes 官网的提交入口](https://www.cityscapes-dataset.com/submit/)即可。
 
 ## <a name="results"></a> 结果
+
+## <a name="citation"></a> 引用
+
+```
+@misc{mmcv,
+    title={{MMCV: OpenMMLab} Computer Vision Foundation},
+    author={MMCV Contributors},
+    howpublished = {\url{https://github.com/open-mmlab/mmcv}},
+    year={2018}
+}
+@misc{mmseg2020,
+    title={{MMSegmentation}: OpenMMLab Semantic Segmentation Toolbox and Benchmark},
+    author={MMSegmentation Contributors},
+    howpublished = {\url{https://github.com/open-mmlab/mmsegmentation}},
+    year={2020}
+}
+```
 
