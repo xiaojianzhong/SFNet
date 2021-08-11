@@ -77,6 +77,10 @@ and finally upload the .zip file onto [the submission entry for the Cityscapes d
 
 ## <a name="results"></a> Results
 
+model | *val* mIoU | *test* mIoU | link
+:---: | :---: | :---: | :---:
+SFNet(ResNet-18) | 75.72% | 74.46% | [sfnet-resnet18.pth](https://drive.google.com/file/d/1vPIWndVDQkBdK2bFaR472wzTRHWjBcpb/view?usp=sharing)
+
 ## <a name="citation"></a> Citation
 
 ```

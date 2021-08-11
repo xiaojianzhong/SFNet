@@ -77,6 +77,10 @@ $ zip -r results.zip results/
 
 ## <a name="results"></a> 结果
 
+模型 | *val* mIoU | *test* mIoU | 链接
+:---: | :---: | :---: | :---:
+SFNet(ResNet-18) | 75.72% | 74.46% | [sfnet-resnet18.pth](https://drive.google.com/file/d/1vPIWndVDQkBdK2bFaR472wzTRHWjBcpb/view?usp=sharing)
+
 ## <a name="citation"></a> 引用
 
 ```
