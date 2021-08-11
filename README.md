@@ -11,6 +11,8 @@
 - [环境要求](#prerequisites)
 - [目录结构](#file-structure)
 - [用法](#usage)
+    - [训练](#train)
+    - [测试](#test)
 - [结果](#results)
 
 ## <a name="prerequisites"></a> 环境要求
@@ -45,11 +47,32 @@ SFNet
 
 ## <a name="usage"></a> 用法
 
+### <a name="train"></a> 训练
+
 ```shell
 $ PYTHONPATH='.':$PYTHONPATH mim train mmseg configs/sfnet/sfnet_r18-d8_512x1024_50k_cityscapes.py \
     --work-dir ./work_dirs/sfnet_r18-d8_512x1024_50k_cityscapes/ \
     --gpus 1
 ```
+
+### <a name="test"></a> 测试
+
+由于 Cityscapes 官方不提供测试集 Ground Truth，所以首先需要为测试集中的图像生成分割结果：
+
+```shell
+$ PYTHONPATH='.':$PYTHONPATH mim test mmseg configs/sfnet/sfnet_r18-d8_512x1024_50k_cityscapes.py \
+    --checkpoint ./work_dirs/sfnet_r18-d8_512x1024_50k_cityscapes/epoch_300.pth \
+    --format-only \
+    --eval-options "imgfile_prefix=./results"
+```
+
+然后将所有分割结果打包压缩：
+
+```shell
+$ zip -r results.zip results/
+```
+
+最后手动将该压缩包上传到 [Cityscapes 官网的提交入口](https://www.cityscapes-dataset.com/submit/)即可。
 
 ## <a name="results"></a> 结果
 

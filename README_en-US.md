@@ -11,6 +11,8 @@ Read this in other languages: English | [简体中文](./README.md)
 - [Prerequisites](#prerequisites)
 - [File Structure](#file-structure)
 - [Usage](#usage)
+    - [Train](#train)
+    - [Test](#test)
 - [Results](#results)
 
 ## <a name="prerequisites"></a> Prerequisites
@@ -45,10 +47,31 @@ SFNet
 
 ## <a name="usage"></a> Usage
 
+### <a name="train"></a> Train
+
 ```shell
 $ PYTHONPATH='.':$PYTHONPATH mim train mmseg configs/sfnet/sfnet_r18-d8_512x1024_50k_cityscapes.py \
     --work-dir ./work_dirs/sfnet_r18-d8_512x1024_50k_cityscapes/ \
     --gpus 1
 ```
+
+### <a name="test"></a> Test
+
+Due to the absence of the Ground Truth for the Cityscapes *test* set, we need to generate segmentation results for these images firstly:
+
+```shell
+$ PYTHONPATH='.':$PYTHONPATH mim test mmseg configs/sfnet/sfnet_r18-d8_512x1024_50k_cityscapes.py \
+    --checkpoint ./work_dirs/sfnet_r18-d8_512x1024_50k_cityscapes/epoch_300.pth \
+    --format-only \
+    --eval-options "imgfile_prefix=./results"
+```
+
+compress all these segmentation results into one file:
+
+```shell
+$ zip -r results.zip results/
+```
+
+and finally upload the .zip file onto [the submission entry for the Cityscapes dataset](https://www.cityscapes-dataset.com/submit/).
 
 ## <a name="results"></a> Results
