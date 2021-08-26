@@ -49,6 +49,7 @@ class FAM(nn.Module):
             conv_cfg=self.conv_cfg,
             norm_cfg=self.norm_cfg,
             act_cfg=self.act_cfg,
+            bias=True,
             inplace=False)
         self.low_down_conv = build_conv_layer(
             self.conv_cfg,
