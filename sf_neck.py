@@ -189,8 +189,8 @@ class SFNeck(nn.Module):
     @auto_fp16()
     def forward(self, inputs):
         """Forward function."""
-        psp_outs = [inputs[-1]]
-        psp_outs.extend(self.ppm(inputs[-1]))
+        psp_outs = self.ppm(inputs[-1])
+        psp_outs.append(inputs[-1])
         psp_out = torch.cat(psp_outs, dim=1)
         psp_out = self.bottleneck(psp_out)
 
