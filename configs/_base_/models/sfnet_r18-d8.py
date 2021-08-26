@@ -1,5 +1,8 @@
 # model settings
-custom_imports = dict(imports=['sf_neck'], allow_failed_imports=False)
+custom_imports = dict(imports=[
+    'sfnet.backbones.resnet',
+    'sfnet.necks.sf_neck',
+], allow_failed_imports=False)
 
 norm_cfg = dict(type='SyncBN', requires_grad=True)
 sampler = dict(
@@ -10,7 +13,7 @@ model = dict(
     type='EncoderDecoder',
     pretrained='open-mmlab://resnet18_v1c',
     backbone=dict(
-        type='ResNetV1c',
+        type='ResNetV1cc',
         depth=18,
         dilations=(1, 1, 2, 4),
         norm_cfg=norm_cfg,
