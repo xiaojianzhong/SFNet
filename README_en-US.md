@@ -81,31 +81,33 @@ Overall results:
 
 model | *val* aAcc | *val* mAcc | *val* mIoU | *test* mIoU | link
 :---: | :---: | :---: | :---: | :---: | :---:
-SFNet(ResNet-18) | 95.68 | 82.62 | 75.72 | 74.46 | [sfnet-resnet18.pth](https://drive.google.com/file/d/1vPIWndVDQkBdK2bFaR472wzTRHWjBcpb/view?usp=sharing)
+SFNet(ResNet-18) | 95.97 | 84.89 | **78.31** |  | [sfnet-resnet18.pth](https://drive.google.com/file/d/1vPIWndVDQkBdK2bFaR472wzTRHWjBcpb/view?usp=sharing)
+SFNet(ResNet-50) | 96.42 | 86.23 | **80.17** |  | [sfnet-resnet50.pth](https://drive.google.com/file/d/1gXJsKxtIohWfPASNhQ7gzCRsxk-oRH3U/view?usp=sharing)
+SFNet(ResNet-101) | 96.47 | 87.38 | **81.01** |  | [sfnet-resnet101.pth](https://drive.google.com/file/d/1kX4VxGUqFAn41w3EC1LnSIqWqdEcj9dt/view?usp=sharing)
 
-mIoU on each class:
+mIoU on each class of the *val* set:
 
-class | SFNet(ResNet-18) *val* | SFNet(ResNet-18) *test*
-:---: | :---: | :---:
-road | 97.75 | 97.96
-sidewalk | 82.47 | 81.66
-building | 91.82 | 91.67
-wall | 45.84 | 41.71
-fence | 56.10 | 50.41
-pole | 63.78 | 61.78
-traffic light | 67.45 | 68.07
-traffic sign | 77.5 | 72.89
-vegetation | 91.92 | 92.64
-terrain | 60.98 | 69.63
-sky | 94.70 | 95.04
-person | 80.24 | 83.26
-rider | 58.23 | 65.34
-car | 94.77 | 94.82
-truck | 79.75 | 61.02
-bus | 85.06 | 75.09
-train | 72.14 | 79.04
-motorcycle | 62.17 | 60.88
-bicycle | 75.97 | 71.88
+class | SFNet(ResNet-18) | SFNet(ResNet-50) | SFNet(ResNet-101)
+:---: | :---: | :---: | :---:
+road | 97.94 | 98.29 | 98.18
+sidewalk | 83.78 | 85.88 | 85.39
+building | 92.29 | 93.08 | 93.42
+wall | 58.26 | 60.17 | 61.86
+fence | 61.92 | 63.84 | 65.67
+pole | 62.6 | 67.43 | 68.5
+traffic light | 70.05 | 73.13 | 73.6
+traffic sign | 77.61 | 80.73 | 81.4
+vegetation | 92.19 | 92.86 | 92.85
+terrain | 63.74 | 65.15 | 65.55
+sky | 94.52 | 95.1 | 95.12
+person | 81.75 | 83.03 | 84.36
+rider | 62.46 | 65.28 | 69.83
+car | 94.97 | 95.58 | 95.77
+truck | 83.09 | 81.0 | 85.65
+bus | 88.65 | 91.15 | 90.69
+train | 81.89 | 84.39 | 84.81
+motorcycle | 62.8 | 67.72 | 67.23
+bicycle | 77.32 | 79.47 | 79.31
 
 ## <a name="citation"></a> Citation
 
