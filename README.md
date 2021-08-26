@@ -1,6 +1,6 @@
 # Semantic Flow for Fast and Accurate Scene Parsing
 
-基于 [mmsegmentation](https://github.com/open-mmlab/mmsegmentation) 的 SFNet 复现。
+基于 [mmsegmentation](https://github.com/open-mmlab/mmsegmentation) 的 SFNet 复现，提交于 [OpenMMLab 算法生态挑战赛](https://openmmlab.com/competitions/algorithm-2021)。
 
 原始论文：[Semantic Flow for Fast and Accurate Scene Parsing](https://arxiv.org/abs/2002.10120)
 
@@ -76,6 +76,8 @@ $ zip -r results.zip results/
 最后手动将该压缩包上传到 [Cityscapes 官网的提交入口](https://www.cityscapes-dataset.com/submit/)即可。
 
 ## <a name="results"></a> 结果
+
+**比赛要求在 cityscapes 上达到超过 77% 的 mIoU，复现得到的三个模型均达到了超过 78.3% 的 mIoU，满足精度要求。**
 
 整体结果：
 

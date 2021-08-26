@@ -1,6 +1,6 @@
 # Semantic Flow for Fast and Accurate Scene Parsing
 
-SFNet implementation based on [mmsegmentation](https://github.com/open-mmlab/mmsegmentation).
+SFNet implementation based on [mmsegmentation](https://github.com/open-mmlab/mmsegmentation), which is submitted for [OpenMMLab Algorithm Ecological Challenge](https://openmmlab.com/competitions/algorithm-2021).
 
 The original paper: [Semantic Flow for Fast and Accurate Scene Parsing](https://arxiv.org/abs/2002.10120)
 
@@ -76,6 +76,8 @@ $ zip -r results.zip results/
 and finally upload the .zip file onto [the submission entry for the Cityscapes dataset](https://www.cityscapes-dataset.com/submit/).
 
 ## <a name="results"></a> Results
+
+**The contest requires the metric mIoU to be larger than 77%, while all the three models of our reimplementation achieve more than 78.3%, which meets the accuracy requirement.**
 
 Overall results:
 
