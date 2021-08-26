@@ -14,6 +14,7 @@ model = dict(
     pretrained='open-mmlab://resnet18_v1c',
     backbone=dict(
         type='ResNetV1cc',
+        stem_channels=128,
         depth=18,
         dilations=(1, 1, 2, 4),
         norm_cfg=norm_cfg,
