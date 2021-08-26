@@ -30,6 +30,7 @@ model = dict(
         channels=128,
         num_convs=1,
         kernel_size=3,
+        concat_input=False,
         num_classes=19,
         norm_cfg=norm_cfg,
         loss_decode=dict(
