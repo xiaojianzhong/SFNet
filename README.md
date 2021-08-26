@@ -79,11 +79,11 @@ $ zip -r results.zip results/
 
 整体结果：
 
-模型 | *val* aAcc | *val* mAcc | *val* mIoU | *test* mIoU | 链接
-:---: | :---: | :---: | :---: | :---: | :---:
-SFNet(ResNet-18) | 95.97 | 84.89 | **78.31** |  | [sfnet-resnet18.pth](https://drive.google.com/file/d/1vPIWndVDQkBdK2bFaR472wzTRHWjBcpb/view?usp=sharing)
-SFNet(ResNet-50) | 96.42 | 86.23 | **80.17** |  | [sfnet-resnet50.pth](https://drive.google.com/file/d/1gXJsKxtIohWfPASNhQ7gzCRsxk-oRH3U/view?usp=sharing)
-SFNet(ResNet-101) | 96.47 | 87.38 | **81.01** |  | [sfnet-resnet101.pth](https://drive.google.com/file/d/1kX4VxGUqFAn41w3EC1LnSIqWqdEcj9dt/view?usp=sharing)
+模型 | *val* aAcc | *val* mAcc | *val* mIoU | 链接
+:---: | :---: | :---: | :---: | :---:
+SFNet(ResNet-18) | 95.97 | 84.89 | **78.31** | [sfnet-resnet18.pth](https://drive.google.com/file/d/1vPIWndVDQkBdK2bFaR472wzTRHWjBcpb/view?usp=sharing)
+SFNet(ResNet-50) | 96.42 | 86.23 | **80.17** | [sfnet-resnet50.pth](https://drive.google.com/file/d/1gXJsKxtIohWfPASNhQ7gzCRsxk-oRH3U/view?usp=sharing)
+SFNet(ResNet-101) | 96.47 | 87.38 | **81.01** | [sfnet-resnet101.pth](https://drive.google.com/file/d/1kX4VxGUqFAn41w3EC1LnSIqWqdEcj9dt/view?usp=sharing)
 
 在*验证集*各个类别上的 mIoU：
 
