@@ -77,13 +77,14 @@ $ zip -r results.zip results/
 
 ## <a name="results"></a> 结果
 
-**比赛要求在 cityscapes 上达到超过 77% 的 mIoU，复现得到的三个模型均达到了超过 78.3% 的 mIoU，满足精度要求。**
+**比赛要求在 cityscapes 上达到超过 77% 的 mIoU，复现得到的三个模型均达到了超过 78% 的 mIoU，满足精度要求。**
 
 整体结果：
 
 模型 | aAcc | mAcc | mIoU | FLOPs | Params | 链接
 :---: | :---: | :---: | :---: | :---: | :---: | :---:
-SFNet(ResNet-18) | 95.97 | 84.89 | **78.31** | 243.32G | 12.87M | [sfnet-resnet18.pth](https://drive.google.com/file/d/1vPIWndVDQkBdK2bFaR472wzTRHWjBcpb/view?usp=sharing)
+SFNet(ResNet-18) | 96.0 | 84.47 | **78.03** | 243.32G | 13.32M | [sfnet-resnet18-dsn.pth](https://drive.google.com/file/d/1nI1hzlgGZEGRGAZw-sryI6jLFatfuzw4/view?usp=sharing)
+SFNet(ResNet-18) +dsn | 95.97 | 84.89 | **78.31** | 243.32G | 12.87M | [sfnet-resnet18.pth](https://drive.google.com/file/d/1vPIWndVDQkBdK2bFaR472wzTRHWjBcpb/view?usp=sharing)
 SFNet(ResNet-50) | 96.42 | 86.23 | **80.17** | 664.07G | 31.33M | [sfnet-resnet50.pth](https://drive.google.com/file/d/1gXJsKxtIohWfPASNhQ7gzCRsxk-oRH3U/view?usp=sharing)
 SFNet(ResNet-101) | 96.47 | 87.38 | **81.01** | 819.46G | 50.32M | [sfnet-resnet101.pth](https://drive.google.com/file/d/1kX4VxGUqFAn41w3EC1LnSIqWqdEcj9dt/view?usp=sharing)
 
