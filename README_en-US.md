@@ -81,11 +81,11 @@ and finally upload the .zip file onto [the submission entry for the Cityscapes d
 
 Overall results:
 
-model | *val* aAcc | *val* mAcc | *val* mIoU | link
-:---: | :---: | :---: | :---: | :---:
-SFNet(ResNet-18) | 95.97 | 84.89 | **78.31** | [sfnet-resnet18.pth](https://drive.google.com/file/d/1vPIWndVDQkBdK2bFaR472wzTRHWjBcpb/view?usp=sharing)
-SFNet(ResNet-50) | 96.42 | 86.23 | **80.17** | [sfnet-resnet50.pth](https://drive.google.com/file/d/1gXJsKxtIohWfPASNhQ7gzCRsxk-oRH3U/view?usp=sharing)
-SFNet(ResNet-101) | 96.47 | 87.38 | **81.01** | [sfnet-resnet101.pth](https://drive.google.com/file/d/1kX4VxGUqFAn41w3EC1LnSIqWqdEcj9dt/view?usp=sharing)
+model | aAcc | mAcc | mIoU | FLOPs | Params | link
+:---: | :---: | :---: | :---: | :---: | :---: | :---:
+SFNet(ResNet-18) | 95.97 | 84.89 | **78.31** | 243.32G | 12.87M | [sfnet-resnet18.pth](https://drive.google.com/file/d/1vPIWndVDQkBdK2bFaR472wzTRHWjBcpb/view?usp=sharing)
+SFNet(ResNet-50) | 96.42 | 86.23 | **80.17** | 664.07G | 31.33M | [sfnet-resnet50.pth](https://drive.google.com/file/d/1gXJsKxtIohWfPASNhQ7gzCRsxk-oRH3U/view?usp=sharing)
+SFNet(ResNet-101) | 96.47 | 87.38 | **81.01** | 819.46G | 50.32M | [sfnet-resnet101.pth](https://drive.google.com/file/d/1kX4VxGUqFAn41w3EC1LnSIqWqdEcj9dt/view?usp=sharing)
 
 mIoU on each class of the *val* set:
 
