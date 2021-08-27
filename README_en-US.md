@@ -1,4 +1,4 @@
-# Semantic Flow for Fast and Accurate Scene Parsing
+# MMSegmentation - SFNet
 
 SFNet implementation based on [mmsegmentation](https://github.com/open-mmlab/mmsegmentation), which is submitted for [OpenMMLab Algorithm Ecological Challenge](https://openmmlab.com/competitions/algorithm-2021).
 
