@@ -37,13 +37,29 @@ SFNet
   |       |       |---- datasets
   |       |       |        |---- cityscapes.py
   |       |       |---- models
+  |       |       |        |---- sfnet_r18-d8_dsn.py
   |       |       |        |---- sfnet_r18-d8.py
+  |       |       |        |---- sfnet_r50-d8.py
+  |       |       |        |---- sfnet_r101-d8.py
   |       |       |---- schedules
   |       |       |        |---- schedule_50k.py
   |       |       |---- default_runtime.py
   |       |---- sfnet
   |               |---- sfnet_r18-d8_512x1024_50k_cityscapes.py
-  |---- sf_neck.py
+  |               |---- sfnet_r18-d8_dsn_512x1024_50k_cityscapes.py
+  |               |---- sfnet_r50-d8_512x1024_50k_cityscapes.py
+  |               |---- sfnet_r101-d8_512x1024_50k_cityscapes.py
+  |---- mmseg
+  |       |---- models
+  |               |---- backbones
+  |               |       |---- resnet.py
+  |               |---- necks
+  |                       |---- sf_neck.py
+  |---- .gitignore
+  |---- README_en-US.md
+  |---- README.md
+  |---- requirements.txt
+  |---- setup.cfg
 ```
 
 ## <a name="usage"></a> 用法
