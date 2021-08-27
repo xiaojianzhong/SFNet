@@ -1,7 +1,7 @@
 # model settings
 custom_imports = dict(imports=[
-    'sfnet.backbones.resnet',
-    'sfnet.necks.sf_neck',
+    'mmseg.models.backbones.resnet',
+    'mmseg.models.necks.sf_neck',
 ], allow_failed_imports=False)
 
 norm_cfg = dict(type='SyncBN', requires_grad=True)
